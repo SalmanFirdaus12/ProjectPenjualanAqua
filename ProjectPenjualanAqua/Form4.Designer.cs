@@ -107,6 +107,7 @@
             this.cbxProduk.Name = "cbxProduk";
             this.cbxProduk.Size = new System.Drawing.Size(160, 24);
             this.cbxProduk.TabIndex = 5;
+            this.cbxProduk.SelectedIndexChanged += new System.EventHandler(this.cbxProduk_SelectedIndexChanged);
             // 
             // cbxJumlah
             // 
@@ -174,6 +175,7 @@
             this.btnSave.TabIndex = 11;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtID
             // 

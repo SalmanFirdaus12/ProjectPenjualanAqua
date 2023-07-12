@@ -124,6 +124,26 @@ namespace ProjectPenjualanAqua
             this.Hide();
         }
 
+        private void txtTransaksi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxPembayaran_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtTransaksi_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtHarga_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         public Form3()
         {
             InitializeComponent();

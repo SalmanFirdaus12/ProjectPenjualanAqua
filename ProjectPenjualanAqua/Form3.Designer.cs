@@ -66,6 +66,7 @@
             this.txtTransaksi.Name = "txtTransaksi";
             this.txtTransaksi.Size = new System.Drawing.Size(200, 22);
             this.txtTransaksi.TabIndex = 4;
+            this.txtTransaksi.TextChanged += new System.EventHandler(this.txtTransaksi_TextChanged);
             // 
             // cbxPembayaran
             // 
@@ -74,6 +75,7 @@
             this.cbxPembayaran.Name = "cbxPembayaran";
             this.cbxPembayaran.Size = new System.Drawing.Size(200, 24);
             this.cbxPembayaran.TabIndex = 5;
+            this.cbxPembayaran.SelectedIndexChanged += new System.EventHandler(this.cbxPembayaran_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -115,6 +117,7 @@
             this.dtTransaksi.Name = "dtTransaksi";
             this.dtTransaksi.Size = new System.Drawing.Size(200, 22);
             this.dtTransaksi.TabIndex = 6;
+            this.dtTransaksi.ValueChanged += new System.EventHandler(this.dtTransaksi_ValueChanged);
             // 
             // txtHarga
             // 
@@ -122,6 +125,7 @@
             this.txtHarga.Name = "txtHarga";
             this.txtHarga.Size = new System.Drawing.Size(200, 22);
             this.txtHarga.TabIndex = 7;
+            this.txtHarga.TextChanged += new System.EventHandler(this.txtHarga_TextChanged);
             // 
             // btnAdd
             // 
