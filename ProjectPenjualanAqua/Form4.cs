@@ -71,8 +71,8 @@ namespace ProjectPenjualanAqua
             string jumlah = cbxJumlah.Text;
             string tglmasuk = cbxMasuk.Text;
             int count = 0;
-            string tempKodeStatus = "";
-            string kodeStatus = "";
+            string tempKodejumlah = "";
+            string kodejumlah = "";
             koneksi.Open();
 
             string str = "select count (*) from dbo.Gudang";
@@ -81,7 +81,7 @@ namespace ProjectPenjualanAqua
 
             if (count == 0)
             {
-                kodeStatus = "1";
+                kodejumlah = "1";
             }
             else
             {
@@ -89,7 +89,7 @@ namespace ProjectPenjualanAqua
                 SqlCommand cmStatusMahasiswaSum = new SqlCommand(str, koneksi);
                 int totalStatusMahasiswa = (int)cmStatusMahasiswaSum.ExecuteScalar();
                 int finalKodeStatus = totalStatusMahasiswa + 1;
-                kodeStatus = Convert.ToString(finalKodeStatus);
+                kodejumlah = Convert.ToString(finalKodeStatus);
 
             }
 
@@ -98,7 +98,7 @@ namespace ProjectPenjualanAqua
             SqlCommand cmd = new SqlCommand(queryString, koneksi);
             cmd.CommandType = CommandType.Text;
 
-            cmd.Parameters.Add(new SqlParameter("idp", kodeStatus));
+            cmd.Parameters.Add(new SqlParameter("idp", kodejumlah));
             cmd.Parameters.Add(new SqlParameter("nm", nama_produk));
             cmd.Parameters.Add(new SqlParameter("jm", jumlah));
             cmd.Parameters.Add(new SqlParameter("tm", tgl_masuk));
